@@ -144,3 +144,41 @@ from cte_2
 i) “Notebook” ranks highest in both year 2020 and 2021 but with only 17% increase as against “Accessories” with 49% increase and more than double the difference for “Notebooks”.
 
 ii) This could be an indication of emerging market trends or shifting consumer preferences.
+
+5. **Get the products that have the highest and lowest manufacturing costs.**
+
+```sql
+with cte as (
+	select
+		p.product_code,
+		p.product,
+		m.manufacturing_cost,
+		rank() over(order by m.manufacturing_cost desc) as rnk
+	from dim_product p
+	inner join fact_manufacturing_cost m
+	on p.product_code = m.product_code
+    order by product)
+select
+		product_code,
+		product,
+		manufacturing_cost
+from cte
+where rnk in (1, (select max(rnk) from cte))
+order by manufacturing_cost desc;
+```
+
+**Result:**
+
+![result_5](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/d0789038-41ba-467f-9fef-7a9150f94378)
+
+
+
+
+
+
+
+
+
+
+
+
