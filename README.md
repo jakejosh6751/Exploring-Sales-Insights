@@ -145,7 +145,7 @@ i) “Notebook” ranks highest in both year 2020 and 2021 but with only 17% inc
 
 ii) This could be an indication of emerging market trends or shifting consumer preferences.
 
-5. **Get the products that have the highest and lowest manufacturing costs.**
+5. **What products have the highest and lowest manufacturing costs?**
 
 ```sql
 with cte as (
@@ -171,6 +171,26 @@ order by manufacturing_cost desc;
 
 ![result_5](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/50717439-80e1-4233-8680-dfebc38f5164)
 
+6. **Who are the top 5 customers who received an average high pre_invoice_discount_pct for the fiscal_year 2021 and in the Indian market?**
+
+```sql
+select
+    c.customer_code,
+    c.customer,
+    round(avg(p.pre_invoice_discount_pct), 4) as average_discount_percentage
+from dim_customer c
+left join fact_pre_invoice_deductions p
+on c.customer_code = p.customer_code
+where c.market = "India" and p.fiscal_year = 2021
+group by c.customer_code
+order by average_discount_percentage desc
+limit 5;
+```
+**Result**
+
+![image](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/bcd506b5-cee1-4423-bd73-b200b51c946f)
+
+**Insights:**
 
 
 
