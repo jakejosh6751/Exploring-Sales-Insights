@@ -83,8 +83,7 @@ from cte;
 
 **Result:**
 
-![result_2](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/9c16fde6-7e52-458c-9c26-9f9b30807fb9)
-
+![result_2](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/c04a220a-e54c-441c-8ebc-0f5aa3958dcb)
 
 **Insights:**
 
