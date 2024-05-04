@@ -91,6 +91,21 @@ i) Adding 89 new products between 2 fiscal years indicates the company’s initi
 
 ii) This also indicates possible increased innovation within the industry, with companies launching new products or variants to capture market share.
 
+3. **How many unique products are in each segment?**
+
+```sql
+select
+	segment,
+	count(distinct product_code) as product_count
+from dim_product
+group by segment
+order by product_count desc;
+```
+
+**Result:**
+   
+![image](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/e3e4e995-c59d-43eb-8b3d-7696de804699)
+
 
 
 
