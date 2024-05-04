@@ -77,13 +77,14 @@ with cte as (
 select
 	product_count_2020 as unique_products_2020,
         product_count_2021 as unique_products_2021,
-	((product_count_2021 - product_count_2020) / product_count_2020) * 100 as percentage_change
+	round(((product_count_2021 - product_count_2020) / product_count_2020) * 100, 2) as percentage_change
 from cte;
 ```
 
 **Result:**
 
-![result_2](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/b00c0765-8df5-479e-84c6-849f0a57581b)
+![result_2](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/9c16fde6-7e52-458c-9c26-9f9b30807fb9)
+
 
 **Insights:**
 
@@ -121,18 +122,18 @@ with cte_1 as (
 cte_2 as (
 	select
 		segment,
-        count(distinct case when fiscal_year = 2020 then product_code end) as product_count_2020,
+	        count(distinct case when fiscal_year = 2020 then product_code end) as product_count_2020,
 		count(distinct case when fiscal_year = 2021 then product_code end) as product_count_2021
 	from cte_1
 	group by segment)
 select 
 	segment,
-    product_count_2020,
+    	product_count_2020,
 	product_count_2021,
 	product_count_2021 - product_count_2020 as difference
 from cte_2
-	group by segment
-	order by (product_count_2021 - product_count_2020) desc;
+group by segment
+order by (product_count_2021 - product_count_2020) desc;
 ```
 
 **Result:**
@@ -157,11 +158,11 @@ with cte as (
 	from dim_product p
 	inner join fact_manufacturing_cost m
 	on p.product_code = m.product_code
-    order by product)
+    	order by product)
 select
 		product_code,
 		product,
-		manufacturing_cost
+		round(manufacturing_cost, 2) as manufacturing_cost
 from cte
 where rnk in (1, (select max(rnk) from cte))
 order by manufacturing_cost desc;
@@ -169,7 +170,8 @@ order by manufacturing_cost desc;
 
 **Result:**
 
-![result_5](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/d0789038-41ba-467f-9fef-7a9150f94378)
+![result_5](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/50717439-80e1-4233-8680-dfebc38f5164)
+
 
 
 
