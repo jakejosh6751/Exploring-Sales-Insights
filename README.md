@@ -107,5 +107,40 @@ order by product_count desc;
 ![image](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/e3e4e995-c59d-43eb-8b3d-7696de804699)
 
 
+4. **Follow-up from 3: Which segment had the most increase in unique products in 2021 vs 2020?**
 
+```sql
+with cte_1 as (
+	select
+		d.segment,
+		f.product_code,
+		f.fiscal_year
+	from dim_product d
+	left join fact_gross_price f
+	on d.product_code = f.product_code),
+cte_2 as (
+	select
+		segment,
+        count(distinct case when fiscal_year = 2020 then product_code end) as product_count_2020,
+		count(distinct case when fiscal_year = 2021 then product_code end) as product_count_2021
+	from cte_1
+	group by segment)
+select 
+	segment,
+    product_count_2020,
+	product_count_2021,
+	product_count_2021 - product_count_2020 as difference
+from cte_2
+	group by segment
+	order by (product_count_2021 - product_count_2020) desc;
+```
 
+**Result:**
+
+![image](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/79314c91-daf5-4921-888a-07b2e09b51ee)
+
+**Insights:**
+
+i) “Notebook” ranks highest in both year 2020 and 2021 but with only 17% increase as against “Accessories” with 49% increase and more than double the difference for “Notebooks”.
+
+ii) This could be an indication of emerging market trends or shifting consumer preferences.
