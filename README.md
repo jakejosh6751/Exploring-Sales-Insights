@@ -54,7 +54,8 @@ Database in MySQL is populated with 6 tables.
    
 **Result:**
 
-   ![result_1](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/b888de8f-be83-4d1a-8410-b26b673d2186)
+![result_1](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/419909a0-70a4-4c24-933b-2f462f9aa0db)
+
 
 **Insights:**
 
