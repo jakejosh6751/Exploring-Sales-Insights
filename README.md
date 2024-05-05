@@ -275,8 +275,8 @@ with cte as (
 	from dim_product p
 	left join fact_sales_monthly sm
 	on p.product_code = sm.product_code
-    where fiscal_year = 2021
-    group by sm.product_code)
+    	where fiscal_year = 2021
+    	group by sm.product_code)
 select
 	division,
 	product_code,
