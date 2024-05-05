@@ -162,7 +162,7 @@ with cte as (
 select
 	product_code,
 	product,
-	concat('$',round(manufacturing_cost, 2)) as manufacturing_cost
+	concat('$', round(manufacturing_cost, 2)) as manufacturing_cost
 from cte
 where rnk in (1, (select max(rnk) from cte))
 order by manufacturing_cost desc;
