@@ -154,7 +154,7 @@ order by (product_count_2021 - product_count_2020) desc;
 with cte as (
 	select
 		p.product_code,
-		p.product,
+        	concat(p.product, ' - ', ' [', p.variant, ']') as product,
 		m.manufacturing_cost,
 		rank() over(order by m.manufacturing_cost desc) as rnk
 	from dim_product p
@@ -162,9 +162,9 @@ with cte as (
 	on p.product_code = m.product_code
     	order by product)
 select
-		product_code,
-		product,
-		round(manufacturing_cost, 2) as manufacturing_cost
+	product_code,
+	product,
+	round(manufacturing_cost, 2) as manufacturing_cost
 from cte
 where rnk in (1, (select max(rnk) from cte))
 order by manufacturing_cost desc;
@@ -172,7 +172,8 @@ order by manufacturing_cost desc;
 
 **Result:**
 
-![result_5](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/50717439-80e1-4233-8680-dfebc38f5164)
+![result_5](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/bdf2fff2-ff7b-4ec9-a79d-b60f1de500e8)
+
 
 #### 6. **Who are the top 5 customers who received an average high pre_invoice_discount_pct for the fiscal_year 2021 and in the Indian market?**
 
