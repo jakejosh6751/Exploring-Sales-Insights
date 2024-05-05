@@ -78,13 +78,14 @@ with cte as (
 select
 	product_count_2020 as unique_products_2020,
         product_count_2021 as unique_products_2021,
-	round(((product_count_2021 - product_count_2020) / product_count_2020) * 100, 2) as percentage_change
+	concat(round(((product_count_2021 - product_count_2020) / product_count_2020) * 100, 2), "%") as percentage_change
 from cte;
 ```
 
 **Result:**
 
-![result_2](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/c04a220a-e54c-441c-8ebc-0f5aa3958dcb)
+![result_2](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/1353a06a-9f6d-4c46-81ea-ae9c4c1398d8)
+
 
 **Insights:**
 
