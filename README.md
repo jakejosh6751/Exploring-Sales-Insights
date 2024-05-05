@@ -42,7 +42,7 @@ Database in MySQL is populated with 6 tables.
 
 ### Data Exploration and Insights
 
-1. **What does the list of markets in which customer 'Atliq Exclusive' operates its business in the APAC region look like?**
+#### 1. **What does the list of markets in which customer 'Atliq Exclusive' operates its business in the APAC region look like?**
 
 ```sql
    select 
@@ -67,7 +67,7 @@ Database in MySQL is populated with 6 tables.
       
 - There’s competitive advantage as the company might concentrate resources in markets where it has stronger foothold.
 
-2. **What is the percentage of unique product increase in 2021 vs 2022?**
+#### 2. **What is the percentage of unique product increase in 2021 vs 2022?**
 
 ```sql
 with cte as (
@@ -92,7 +92,7 @@ from cte;
 
 - This also indicates possible increased innovation within the industry, with companies launching new products or variants to capture market share.
 
-3. **How many unique products are in each segment?**
+#### 3. **How many unique products are in each segment?**
 
 ```sql
 select
@@ -108,7 +108,7 @@ order by product_count desc;
 ![image](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/e3e4e995-c59d-43eb-8b3d-7696de804699)
 
 
-4. **Follow-up from 3: Which segment had the most increase in unique products in 2021 vs 2020?**
+#### 4. **Follow-up from 3: Which segment had the most increase in unique products in 2021 vs 2020?**
 
 ```sql
 with cte_1 as (
@@ -146,7 +146,7 @@ order by (product_count_2021 - product_count_2020) desc;
 
 - This could be an indication of emerging market trends or shifting consumer preferences.
 
-5. **What products have the highest and lowest manufacturing costs?**
+#### 5. **What products have the highest and lowest manufacturing costs?**
 
 ```sql
 with cte as (
@@ -172,7 +172,7 @@ order by manufacturing_cost desc;
 
 ![result_5](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/50717439-80e1-4233-8680-dfebc38f5164)
 
-6. **Who are the top 5 customers who received an average high pre_invoice_discount_pct for the fiscal_year 2021 and in the Indian market?**
+#### 6. **Who are the top 5 customers who received an average high pre_invoice_discount_pct for the fiscal_year 2021 and in the Indian market?**
 
 ```sql
 select
