@@ -222,10 +222,44 @@ group by Quarter;
 
 **Insights:**
 
+#### 9. **Which channel helped to bring more gross sales in the fiscal year 2021 and the percentage of contribution?**
 
+```sql
+with cte_1 as (
+	select
+		c.channel,
+		sm.fiscal_year as fiscal_year,
+		gp.gross_price * sm.sold_quantity as `Gross sales Amount`
+	from dim_customer c
+	left join fact_sales_monthly sm
+	on c.customer_code = sm.customer_code
+	left join fact_gross_price gp
+	on gp.product_code  = sm.product_code
+	where sm.fiscal_year = 2021),
+cte_2 as (
+	select
+		channel,
+		round(sum(`Gross sales Amount`), 2) as gross_sales_amount,
+		concat(round(sum(`Gross sales Amount`) / (select sum(`Gross sales Amount`) from cte_1) * 100, 2), '%') as percentage
+	from cte_1
+	group by channel
+	order by gross_sales_amount desc
+	limit 1)
+select 
+	channel,
+	concat('$', format(gross_sales_amount, 2)) gross_sales_amount,
+	percentage
+from cte_2
+group by channel
+order by gross_sales_amount desc
+limit 1;
+```
 
+**Result:**
 
+![result_9](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/36913ab9-8bbe-4588-8c58-f0113ed0cc35)
 
+**Insights:**
 
 
 
