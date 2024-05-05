@@ -105,7 +105,7 @@ order by product_count desc;
 
 **Result:**
    
-![image](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/e3e4e995-c59d-43eb-8b3d-7696de804699)
+![image](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/90a4a893-2e8f-40c6-8113-2e16a6950f20)
 
 
 #### 4. **Follow-up from 3: Which segment had the most increase in unique products in 2021 vs 2020?**
@@ -138,7 +138,8 @@ order by (product_count_2021 - product_count_2020) desc;
 
 **Result:**
 
-![image](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/79314c91-daf5-4921-888a-07b2e09b51ee)
+![image](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/1795ab53-b8fe-4a41-a515-f887029459a0)
+
 
 **Insights:**
 
