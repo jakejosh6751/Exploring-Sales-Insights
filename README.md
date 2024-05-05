@@ -216,7 +216,9 @@ group by Quarter;
 
 **Result:**
 
-![result_8](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/011bd2ae-a6a5-4981-96d0-a539e303e6c0)
+![result_8](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/4147c5ac-4ae6-4a5c-b24c-3579e8361256)
+
+
 
 
 
