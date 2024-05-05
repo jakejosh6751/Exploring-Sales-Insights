@@ -58,13 +58,13 @@ Database in MySQL is populated with 6 tables.
 
 **Insights:**
 
-i)	AtliQ Mart operates in 8 out of arguably 36 different markets (about a quarter) in the Asia – Pacific region as a diversification strategy.
+- AtliQ Mart operates in 8 out of arguably 36 different markets (about a quarter) in the Asia – Pacific region as a diversification strategy.
       
-ii) Operating in multiple markets spreads risk, decreasing the vulnerability of the company to market fluctuations.
+- Operating in multiple markets spreads risk, decreasing the vulnerability of the company to market fluctuations.
       
-iii) It also shows AtliQ Mart’s ability to navigate different regulatory environments for business.
+- It also shows AtliQ Mart’s ability to navigate different regulatory environments for business.
       
-iv)	There’s competitive advantage as the company might concentrate resources in markets where it has stronger foothold.
+- There’s competitive advantage as the company might concentrate resources in markets where it has stronger foothold.
 
 2. **What is the percentage of unique product increase in 2021 vs 2022?**
 
@@ -87,9 +87,9 @@ from cte;
 
 **Insights:**
 
-i) Adding 89 new products between 2 fiscal years indicates the company’s initiative to provide a broader range of choices for customers, suggesting the market is expanding or diversifying.
+- Adding 89 new products between 2 fiscal years indicates the company’s initiative to provide a broader range of choices for customers, suggesting the market is expanding or diversifying.
 
-ii) This also indicates possible increased innovation within the industry, with companies launching new products or variants to capture market share.
+- This also indicates possible increased innovation within the industry, with companies launching new products or variants to capture market share.
 
 3. **How many unique products are in each segment?**
 
@@ -141,9 +141,9 @@ order by (product_count_2021 - product_count_2020) desc;
 
 **Insights:**
 
-i) “Notebook” ranks highest in both year 2020 and 2021 but with only 17% increase as against “Accessories” with 49% increase and more than double the difference for “Notebooks”.
+- “Notebook” ranks highest in both year 2020 and 2021 but with only 17% increase as against “Accessories” with 49% increase and more than double the difference for “Notebooks”.
 
-ii) This could be an indication of emerging market trends or shifting consumer preferences.
+- This could be an indication of emerging market trends or shifting consumer preferences.
 
 5. **What products have the highest and lowest manufacturing costs?**
 
