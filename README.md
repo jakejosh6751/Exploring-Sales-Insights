@@ -55,7 +55,7 @@ Database in MySQL is populated with 6 tables. Here is a preview of all tables wi
 ![result_1](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/fede9ae7-2a6d-4b54-9427-0311ec8b10a6)
 
 
-**Insights:**
+**Insight:**
 
 - Atliq Exclusive operates in 8 out of arguably 36 different markets (about a quarter) in the Asia – Pacific region as a diversification strategy.
       
@@ -85,7 +85,7 @@ from cte;
 ![result_2](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/1353a06a-9f6d-4c46-81ea-ae9c4c1398d8)
 
 
-**Insights:**
+**Insight:**
 
 - Adding 89 new products between 2 fiscal years indicates the company’s initiative to provide a broader range of choices for customers, suggesting the market is expanding or diversifying.
 
@@ -140,7 +140,7 @@ order by (product_count_2021 - product_count_2020) desc;
 ![image](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/1795ab53-b8fe-4a41-a515-f887029459a0)
 
 
-**Insights:**
+**Insight:**
 
 - “Notebook” ranks highest in both year 2020 and 2021 but with only 17% increase as against “Accessories” with 49% increase and more than double the difference for “Notebooks”.
 
@@ -192,13 +192,13 @@ limit 5;
 
 ![image](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/bcd506b5-cee1-4423-bd73-b200b51c946f)
 
-**Insights:**
+**Insight:**
 
 #### 7. 
 
 **Result:**
 
-**Insights:**
+**Insight:**
 
 #### 8. **Which quarter of 2020 got the maximum total_sold_quantity?**
 
@@ -220,7 +220,7 @@ group by Quarter;
 
 ![result_8](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/4147c5ac-4ae6-4a5c-b24c-3579e8361256)
 
-**Insights:**
+**Insight:**
 
 #### 9. **Which channel helped to bring more gross sales in the fiscal year 2021 and the percentage of contribution?**
 
@@ -259,7 +259,7 @@ limit 1;
 
 ![result_9](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/36913ab9-8bbe-4588-8c58-f0113ed0cc35)
 
-**Insights:**
+**Insight:**
 
 #### 10. **What are the top 3 products in each division that have a high total_sold_quantity in the fiscal year 2021?**
 
@@ -290,6 +290,6 @@ order by total_sold_quantity desc;
 
 **Result:**
 
-**Insights:**
+**Insight:**
 
 
