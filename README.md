@@ -186,7 +186,7 @@ group by c.customer_code
 order by average_discount_percentage desc
 limit 5;
 ```
-**Result**
+**Result:**
 
 ![image](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/bcd506b5-cee1-4423-bd73-b200b51c946f)
 
