@@ -162,7 +162,7 @@ with cte as (
 select
 	product_code,
 	product,
-	round(manufacturing_cost, 2) as manufacturing_cost
+	concat('$',round(manufacturing_cost, 2)) as manufacturing_cost
 from cte
 where rnk in (1, (select max(rnk) from cte))
 order by manufacturing_cost desc;
@@ -170,7 +170,7 @@ order by manufacturing_cost desc;
 
 **Result:**
 
-![result_5](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/bdf2fff2-ff7b-4ec9-a79d-b60f1de500e8)
+![result_5](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/0542fad3-cc47-4526-9c13-7d693c06bc56)
 
 
 #### 6. **Who are the top 5 customers who received an average high pre_invoice_discount_pct for the fiscal_year 2021 and in the Indian market?**
