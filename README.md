@@ -288,5 +288,8 @@ where rank_order <= 3
 order by total_sold_quantity desc;
 ```
 
+**Result:**
+
+**Insights:**
 
 
