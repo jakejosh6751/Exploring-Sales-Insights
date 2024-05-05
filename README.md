@@ -59,11 +59,11 @@ Database in MySQL is populated with 6 tables.
 
 **Insights:**
 
-- AtliQ Exclusive operates in 8 out of arguably 36 different markets (about a quarter) in the Asia – Pacific region as a diversification strategy.
+- Atliq Exclusive operates in 8 out of arguably 36 different markets (about a quarter) in the Asia – Pacific region as a diversification strategy.
       
 - Operating in multiple markets spreads risk, decreasing the vulnerability of the company to market fluctuations.
       
-- It also shows AtliQ Exclusive’s ability to navigate different regulatory environments for business.
+- It also shows Atliq Exclusive’s ability to navigate different regulatory environments for business.
       
 - There’s competitive advantage as the company might concentrate resources in markets where it has stronger foothold.
 
