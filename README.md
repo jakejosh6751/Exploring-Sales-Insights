@@ -261,8 +261,32 @@ limit 1;
 
 **Insights:**
 
+#### 10. **What are the top 3 products in each division that have a high total_sold_quantity in the fiscal year 2021?**
 
-
+```sql
+with cte as (
+	select
+		p.division,
+		p.product_code,
+		p.product,
+        	p.variant,
+		sum(sm.sold_quantity) as total_sold_quantity,
+		rank() over(partition by p.division order by sum(sm.sold_quantity) desc) as rank_order
+	from dim_product p
+	left join fact_sales_monthly sm
+	on p.product_code = sm.product_code
+    where fiscal_year = 2021
+    group by sm.product_code)
+select
+	division,
+	product_code,
+    	concat(product, ' - ', ' [', variant, ']') as product,
+	total_sold_quantity,
+	rank_order
+from cte
+where rank_order <= 3
+order by total_sold_quantity desc;
+```
 
 
 
