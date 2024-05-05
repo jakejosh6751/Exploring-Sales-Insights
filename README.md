@@ -196,8 +196,27 @@ limit 5;
 
 **Insights:**
 
+#### 7. 
 
+#### 8. **Which quarter of 2020 got the maximum total_sold_quantity?**
 
+```sql
+select
+	case
+		when month(date) between 9 and 11 then 'Q1'
+		when month(date) between 3 and 5 then 'Q3'
+		when month(date) between 6 and 8 then 'Q4'
+        else 'Q2'
+	end as Quarter,
+	sum(sold_quantity) as total_sold_quantity
+from fact_sales_monthly
+where fiscal_year = 2020
+group by Quarter;
+```
+
+**Result:**
+
+![result_8](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/011bd2ae-a6a5-4981-96d0-a539e303e6c0)
 
 
 
