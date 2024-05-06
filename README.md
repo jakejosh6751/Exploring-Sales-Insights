@@ -307,6 +307,8 @@ order by total_sold_quantity desc;
 
 **Result:**
 
+![result_10](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/bd9f9dcb-8a4e-4824-bc7d-cfa96ed1d256)
+
 **Insight:**
 
 
