@@ -235,6 +235,8 @@ group by Quarter;
 ![result_8](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/c879f07a-d83b-452d-8c57-2da7fa1e8119)
 
 **Insight:**
+- Quarter 1 is the best in terms of total sold quantity. Quarter 2 and 4 are comparatively good. Inventory and staffing levels should be optimized for these periods.
+- Strategy or product offerings should be looked into for Quarter 3.
 
 #### 9. **Which channel helped to bring more gross sales in the fiscal year 2021 and the percentage of contribution?**
 
