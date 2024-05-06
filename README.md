@@ -197,6 +197,9 @@ limit 5;
 
 **Insight:**
 
+- High pre-order discount percents show signs the company has customers that are highly sensitive to price adjustments.
+- On the flip side, caution must be exercised to balance discounts with profitability.
+
 #### 7. 
 
 **Result:**
