@@ -188,7 +188,7 @@ limit 5;
 ```
 **Result:**
 
-![image](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/bcd506b5-cee1-4423-bd73-b200b51c946f)
+![image](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/78c739c8-8eec-4e78-a8fe-b2df3e3e2562)
 
 **Insight:**
 - High pre-order discount percents show signs the company has customers that are highly sensitive to price adjustments.
