@@ -106,6 +106,9 @@ order by product_count desc;
    
 ![image](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/90a4a893-2e8f-40c6-8113-2e16a6950f20)
 
+**Insight:**
+
+- Notebooks, Accessories, and Peripherals representing 83% of products across all segments are the strongest segments for Atliq Hardware.
 
 #### 4. **Follow-up from 3: Which segment had the most increase in unique products in 2021 vs 2020?**
 
