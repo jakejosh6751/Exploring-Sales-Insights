@@ -194,8 +194,22 @@ limit 5;
 - High pre-order discount percents show signs the company has customers that are highly sensitive to price adjustments.
 - On the flip side, caution must be exercised to balance discounts with profitability.
 
-#### 7. 
+#### 7. What are the gross sales amounts for the customer "Atliq Exclusive" for each month? **
 
+```sql
+select
+    monthname(sm.date) as Month,
+    year(sm.date) as Year,
+    round(sum(sm.sold_quantity * gp.gross_price), 2) as `Gross Sales Amount`
+from fact_sales_monthly sm
+left join fact_gross_price gp
+on sm.product_code = gp.product_code
+left join dim_customer c
+on sm.customer_code = c.customer_code
+where c.customer = 'Atliq Exclusive'
+group by Month, Year
+order by Year, month(sm.date);
+```
 **Result:**
 
 **Insight:**
