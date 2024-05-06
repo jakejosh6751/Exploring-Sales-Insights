@@ -54,9 +54,7 @@ Database in MySQL is populated with 6 tables. Here is a preview of all tables wi
 
 ![result_1](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/fede9ae7-2a6d-4b54-9427-0311ec8b10a6)
 
-
 **Insight:**
-
 - Atliq Exclusive operates in 8 out of arguably 36 different markets (about a quarter) in the Asia – Pacific region as a diversification strategy.
       
 - Operating in multiple markets spreads risk, decreasing the vulnerability of the company to market fluctuations.
@@ -86,7 +84,6 @@ from cte;
 
 
 **Insight:**
-
 - Adding 89 new products between 2 fiscal years indicates the company’s initiative to provide a broader range of choices for customers, suggesting the market is expanding or diversifying.
 
 - This also indicates possible increased innovation within the industry, with companies launching new products or variants to capture market share.
@@ -107,7 +104,6 @@ order by product_count desc;
 ![image](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/90a4a893-2e8f-40c6-8113-2e16a6950f20)
 
 **Insight:**
-
 - Notebooks, Accessories, and Peripherals representing 83% of products across all segments are the strongest segments for Atliq Hardware.
 
 #### 4. **Follow-up from 3: Which segment had the most increase in unique products in 2021 vs 2020?**
@@ -144,7 +140,6 @@ order by (product_count_2021 - product_count_2020) desc;
 
 
 **Insight:**
-
 - “Notebook” ranks highest in both year 2020 and 2021 but with only 17% increase as against “Accessories” with 49% increase and more than double the difference for “Notebooks”.
 
 - This could be an indication of emerging market trends or shifting consumer preferences.
@@ -196,7 +191,6 @@ limit 5;
 ![image](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/bcd506b5-cee1-4423-bd73-b200b51c946f)
 
 **Insight:**
-
 - High pre-order discount percents show signs the company has customers that are highly sensitive to price adjustments.
 - On the flip side, caution must be exercised to balance discounts with profitability.
 
@@ -266,6 +260,7 @@ limit 1;
 ![result_9](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/36913ab9-8bbe-4588-8c58-f0113ed0cc35)
 
 **Insight:**
+- Retailer attracts more than 2 times the gross sales from other channels (Direct and Distributor) combined.
 
 #### 10. **What are the top 3 products in each division that have a high total_sold_quantity in the fiscal year 2021?**
 
