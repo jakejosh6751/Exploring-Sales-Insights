@@ -310,5 +310,5 @@ order by total_sold_quantity desc;
 ![result_10](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/bd9f9dcb-8a4e-4824-bc7d-cfa96ed1d256)
 
 **Insight:**
-
-
+- Each "Division" has 2 similar products with different variants in the list of top selling products for fiscal year 2021.
+- This emphasizes the advantage of providing a broad range of choices for customers. Customers may be driven by price difference, product quality, or some other features which the company can investigate and concentrate resources therein.
