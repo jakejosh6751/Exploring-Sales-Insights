@@ -63,7 +63,7 @@ Database in MySQL is populated with 6 tables. Here is a preview of all tables wi
       
 - There’s competitive advantage as the company might concentrate resources in markets where it has stronger foothold.
 
-#### 2. **What is the percentage of unique product increase in 2021 vs 2022?**
+#### 2. What is the percentage of unique product increase in 2021 vs 2022?
 
 ```sql
 with cte as (
@@ -88,7 +88,7 @@ from cte;
 
 - This also indicates possible increased innovation within the industry, with companies launching new products or variants to capture market share.
 
-#### 3. **How many unique products are in each segment?**
+#### 3. How many unique products are in each segment?
 
 ```sql
 select
@@ -106,7 +106,7 @@ order by product_count desc;
 **Insight:**
 - Notebooks, Accessories, and Peripherals representing 83% of products across all segments are the strongest segments for Atliq Hardware.
 
-#### 4. **Follow-up from 3: Which segment had the most increase in unique products in 2021 vs 2020?**
+#### 4. Follow-up from 3: Which segment had the most increase in unique products in 2021 vs 2020?
 
 ```sql
 with cte_1 as (
@@ -144,7 +144,7 @@ order by (product_count_2021 - product_count_2020) desc;
 
 - This could be an indication of emerging market trends or shifting consumer preferences.
 
-#### 5. **What products have the highest and lowest manufacturing costs?**
+#### 5. What products have the highest and lowest manufacturing costs?
 
 ```sql
 with cte as (
@@ -171,7 +171,7 @@ order by manufacturing_cost desc;
 ![result_5](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/0542fad3-cc47-4526-9c13-7d693c06bc56)
 
 
-#### 6. **Who are the top 5 customers who received an average high pre_invoice_discount_pct for the fiscal_year 2021 and in the Indian market?**
+#### 6. Who are the top 5 customers who received an average high pre_invoice_discount_pct for the fiscal_year 2021 and in the Indian market?
 
 ```sql
 select
@@ -194,7 +194,7 @@ limit 5;
 - High pre-order discount percents show signs the company has customers that are highly sensitive to price adjustments.
 - On the flip side, caution must be exercised to balance discounts with profitability.
 
-#### 7. What are the gross sales amounts for the customer "Atliq Exclusive" for each month? **
+#### 7. What are the gross sales amounts for the customer "Atliq Exclusive" for each month?
 
 ```sql
 select
@@ -214,7 +214,7 @@ order by Year, month(sm.date);
 
 **Insight:**
 
-#### 8. **Which quarter of 2020 got the maximum total_sold_quantity?**
+#### 8. Which quarter of 2020 got the maximum total_sold_quantity?
 
 ```sql
 select
@@ -238,7 +238,7 @@ group by Quarter;
 - Quarter 1 is the best in terms of total sold quantity. Quarter 2 and 4 are comparatively good. Inventory and staffing levels should be optimized for these periods.
 - Strategy or product offerings should be looked into for Quarter 3.
 
-#### 9. **Which channel helped to bring more gross sales in the fiscal year 2021 and the percentage of contribution?**
+#### 9. Which channel helped to bring more gross sales in the fiscal year 2021 and the percentage of contribution?
 
 ```sql
 with cte_1 as (
@@ -278,7 +278,7 @@ limit 1;
 **Insight:**
 - Retailer attracts more than 2 times the gross sales from other channels (Direct and Distributor) combined.
 
-#### 10. **What are the top 3 products in each division that have a high total_sold_quantity in the fiscal year 2021?**
+#### 10. What are the top 3 products in each division that have a high total_sold_quantity in the fiscal year 2021?
 
 ```sql
 with cte as (
