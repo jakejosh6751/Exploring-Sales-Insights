@@ -6,9 +6,10 @@ AtliQ Hardware is one of the leading computer hardware producers in India and we
 However, the management noticed that they do not get enough insights to make quick and smart data-informed decisions. They want to expand their data analytics team by adding several junior data analysts. Their data analytics director wants to hire someone who is good at both tech and soft skills. Hence, he decided to conduct a SQL challenge which will help him rate both skills.
 
 ### Data Structure
-Database in MySQL is populated with 6 tables.
+Database in MySQL is populated with 6 tables from a SQL script.
 
-Follow the link to see full detail of codebasics "Challenge #4" with problem files containing data set: [https://codebasics.io/challenge/codebasics-resume-project-challenge]
+Follow the link to see full detail of codebasics "Challenge #4" with problem files containing SQL script: 
+[https://codebasics.io/challenge/codebasics-resume-project-challenge]
 
 Here is a preview of all tables with their headers;
 
