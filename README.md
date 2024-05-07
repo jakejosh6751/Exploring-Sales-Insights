@@ -8,39 +8,39 @@ However, the management noticed that they do not get enough insights to make qui
 ### Data Structure
 Database in MySQL is populated with 6 tables. Here is a preview of all tables with their headers;
 
-#### *dim_customer:*
+#### dim_customer:
 
 | customer_code | customer | platform | channel | market | sub_zone | region |
 |---------------|----------|----------|---------|--------|----------|--------|
 
-#### *dim_product:*
+#### dim_product:
 
 | product_code | division | segment | category | product | variant |
 |--------------|----------|----------|---------|--------|----------|
 
-#### *fact_gross_price:*
+#### fact_gross_price:
 
 | product_code | fiscal_year | gross_price |
 |---------------|----------|---------------|
 
-#### *fact_manufacturing_cost:*
+#### fact_manufacturing_cost:
 
 | product_code | cost_year | manufacturing_cost |
 |---------------|----------|---------------|
 
-#### *fact_pre_invoice_deductions:*
+#### fact_pre_invoice_deductions:
 
 | customer_code | fiscal_year | pre_invoice_discount_pct |
 |---------------|----------|---------------|
 
-#### *fact_sales_monthly:*
+#### fact_sales_monthly:
 
 | date | product_code | customer_code | sold_quantity | fiscal_year |
 |---------------|----------|---------------|-----------|------------|
 
 ### Data Exploration and Insights
 
-#### 1. **What does the list of markets in which customer 'Atliq Exclusive' operates its business in the APAC region look like?**
+#### 1. What does the list of markets in which customer 'Atliq Exclusive' operates its business in the APAC region look like?
 
 ```sql
    select 
