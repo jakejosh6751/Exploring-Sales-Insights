@@ -217,6 +217,9 @@ order by Year, month(sm.date);
 ```
 **Result:**
 
+![result_7](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/9c189ba9-b480-4a11-a308-ef16c6275aa9)
+
+
 **Insight:**
 
 #### 8. Which quarter of 2020 got the maximum total_sold_quantity?
