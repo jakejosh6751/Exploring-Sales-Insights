@@ -1,4 +1,4 @@
-![image](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/00a3f5b9-f8ee-4d64-aa66-cb5c9c4b95bd)
+![image](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/115d59bd-9920-4b8b-af7d-5de3779d0f9c)
 
 # Exploring-Sales-Insights
 ## A MySQL Analysis of AtliQ Hardware Sales Data
