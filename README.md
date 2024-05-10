@@ -1,5 +1,8 @@
+![banner](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/93e84477-9316-4595-bfd0-a076bc5adb3b)
+
 # Exploring-Sales-Insights
 ## A MySQL Analysis of AtliQ Hardware Sales Data
+
 ### Problem Statement
 AtliQ Hardware is one of the leading computer hardware producers in India and well expanded in other countries too.
 
