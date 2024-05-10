@@ -18,32 +18,32 @@ Here is a preview of all tables with their headers;
 
 #### dim_customer:
 
-| customer_code | customer | platform | channel | market | sub_zone | region |
+| customer_code (PK) | customer | platform | channel | market | sub_zone | region |
 |---------------|----------|----------|---------|--------|----------|--------|
 
 #### dim_product:
 
-| product_code | division | segment | category | product | variant |
+| product_code (PK) | division | segment | category | product | variant |
 |--------------|----------|----------|---------|--------|----------|
 
 #### fact_gross_price:
 
-| product_code | fiscal_year | gross_price |
+| product_code (PK1) | fiscal_year (PK2) | gross_price |
 |---------------|----------|---------------|
 
 #### fact_manufacturing_cost:
 
-| product_code | cost_year | manufacturing_cost |
+| product_code (PK1) | cost_year (PK2) | manufacturing_cost |
 |---------------|----------|---------------|
 
 #### fact_pre_invoice_deductions:
 
-| customer_code | fiscal_year | pre_invoice_discount_pct |
+| customer_code (PK1) | fiscal_year (PK2) | pre_invoice_discount_pct |
 |---------------|----------|---------------|
 
 #### fact_sales_monthly:
 
-| date | product_code | customer_code | sold_quantity | fiscal_year |
+| date | product_code (PK1) | customer_code (PK2) | sold_quantity | fiscal_year |
 |---------------|----------|---------------|-----------|------------|
 
 ### Data Exploration and Insights
