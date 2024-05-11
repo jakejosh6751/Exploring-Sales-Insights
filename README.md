@@ -222,8 +222,15 @@ order by Year, month(sm.date);
 
 ![result_7](https://github.com/jakejosh6751/Exploring-Sales-Insights/assets/148710647/9c189ba9-b480-4a11-a308-ef16c6275aa9)
 
-
 **Insight:**
+- The declining sales from December 2019 (onset of the covid-19 lockdown) to a spike in sales from September 2020 (recovery from the lockdown) might be attributed to the covid-19 pandemic.
+
+- A global chip shortage which started early 2020 was also reported as a result of higher demand than production capacity could handle. According to a wikipedia article, the crisis led to major price increases, long queues, and reselling among consumers and manufacturers for computers, household appliances, and other consumer electronics that require integrated circuits (commonly called "chips").
+
+- Further findings like products, variants, and markets segmentations amongst others, may uncover the reason behind the sales spike in November 2020. This is a potential opportunity to explore. 
+
+- There's monthly periodicity in  year 2021 that  deserves further study.
+
 
 #### 8. Which quarter of 2020 got the maximum total_sold_quantity?
 
