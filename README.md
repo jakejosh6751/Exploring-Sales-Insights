@@ -11,7 +11,8 @@ However, the management noticed that they do not get enough insights to make qui
 ### Data Preparation
 Database in MySQL is populated with 6 tables from a SQL script.
 
-Follow the link to see full detail of codebasics "Challenge #4" with problem files containing SQL script: 
+Follow the link to see full detail of codebasics "Challenge #4" with problem files containing SQL script:
+
 [https://codebasics.io/challenge/codebasics-resume-project-challenge]
 
 To understand the data, here is a view of all table headers;
